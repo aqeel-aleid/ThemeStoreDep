@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Our Themes Page{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Our Themes</h1>
+        <div class="themes-container">
+            <div class="card">
+                <img src="{% static 'images/wallpaper1.jpg' %}" />
+                <h4>Theme 1</h4>
+            </div>
+
+
+            <div class="card">
+                <img src="{% static 'images/wallpaper2.jpg' %}" />
+                <h4>Theme 2</h4>
+            </div>
+
+
+            <div class="card">
+                <img src="{% static 'images/wallpaper3.jpg' %}" />
+                <h4>Theme 3</h4>
+            </div>
+        </div>
+
+    </section>
+
+{% endblock %}
